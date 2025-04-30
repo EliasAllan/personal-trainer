@@ -44,7 +44,7 @@ function BookSession() {
       <p>Fill out the form below and we’ll reach out to confirm your appointment.</p>
 
       {!submitted ? (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '500px' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
           <input
             type="text"
             name="name"
@@ -82,7 +82,7 @@ function BookSession() {
           <button type="submit" className="btn-primary">Book Now</button>
         </form>
       ) : (
-        <p>✅ Thank you! Your request has been sent. We’ll get back to you soon.</p>
+        <p style={{ marginTop: '1.5rem' }}>✅ Thank you! Your request has been sent. We’ll get back to you soon.</p>
       )}
     </div>
   );
