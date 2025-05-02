@@ -1,0 +1,202 @@
+/* General layout */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* center everything */
+    text-align: center;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+  
+  
+  .hero-image {
+    width: 320px;               /* Increased size */
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* subtle depth */
+  }
+  
+  .hero-image-bg {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-image: url('/images/allan-n-mom.jpg');
+    background-size: 80%;          /* 👈 Zoomed out image */
+    background-position: center 20%; /* Adjust if head is too high */
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-buttons .outline {
+    background-color: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
+  }
+  
+  .hero-buttons button:hover {
+    background-color: #e03e00;
+  }
+  
+  
+  /* Trust Section */
+  .trust {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .trust-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  /* Bio Preview */
+  .bio-preview {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .bio-card {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .bio-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .bio-link {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4500;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background: #fefefe;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0 auto 10px;
+    max-width: 600px;
+  }
+  
+  .testimonials cite {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Footer CTA */
+  .footer-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .footer-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-cta button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    color: #ff4500;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .footer-cta button:hover {
+    background: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .hero-image {
+      max-width: 100%;
+    }
+  
+    .hero-buttons button {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
