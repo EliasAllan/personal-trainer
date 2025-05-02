@@ -43,6 +43,11 @@
     transition: color 0.2s ease;
   }
   
+  .logo-image {
+    height: 48px;
+    width: auto;
+  }
+  
   .nav-links li a:hover {
     color: #ff4500;
   }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // We'll make this next
+import './Navbar.css';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -8,7 +8,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-header">
-        <h1 className="logo">TrainerFit</h1>
+        <Link to="/" className="logo">
+          <img src="/images/NevesFit.png" alt="NevesFit Logo" className="logo-image" />
+        </Link>
         <button className="hamburger" onClick={() => setOpen(!open)}>
           ☰
         </button>
