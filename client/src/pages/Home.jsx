@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <div className="bio-card">
           <img src="/images/marie-home.jpg" alt="Mom" />
-          <h4>Coach Mom</h4>
+          <h4>Marie Street</h4>
           <p>Strength & Wellness Mentor. Age-Friendly Fitness Expert.</p>
         </div>
         <a href="/about" className="bio-link">Read More →</a>
@@ -79,7 +79,7 @@ export default function Home() {
           “Training with Allan and his mom has been one of the most inspiring
           things I’ve ever done. I feel stronger at 60 than I did at 30.”
         </blockquote>
-        <cite>— Jamie R.</cite>
+        <cite>— Placeholder</cite>
       </motion.section>
 
       {/* Footer CTA */}
