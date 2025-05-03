@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function BookSession() {
   const [formData, setFormData] = useState({
@@ -39,12 +40,25 @@ function BookSession() {
   };
 
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <h2>Book a Session</h2>
       <p>Fill out the form below and we’ll reach out to confirm your appointment.</p>
 
       {!submitted ? (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.5rem' }}>
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1rem',
+            marginTop: '1.5rem',
+          }}
+        >
           <input
             type="text"
             name="name"
@@ -82,9 +96,11 @@ function BookSession() {
           <button type="submit" className="btn-primary">Book Now</button>
         </form>
       ) : (
-        <p style={{ marginTop: '1.5rem' }}>✅ Thank you! Your request has been sent. We’ll get back to you soon.</p>
+        <p style={{ marginTop: '1.5rem' }}>
+          ✅ Thank you! Your request has been sent. We’ll get back to you soon.
+        </p>
       )}
-    </div>
+    </motion.div>
   );
 }
 

@@ -18,7 +18,7 @@ export default function About() {
         <div className="about-text">
           <h2>Marie Street</h2>
           <p>
-            I’m a fitness enthusiast with a passion for movement and healthy
+            I’m a certified personal trainer with a passion for movement and healthy
             living. I help others realize their strength no matter their age!
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function About() {
         <div className="about-text">
           <h2>Allan Elias</h2>
           <p>
-            I’m a certified personal trainer dedicated to helping people feel
+            I’m a fitness enthusiast dedicated to helping people feel
             strong, confident, and supported in every step of their journey.
           </p>
         </div>
