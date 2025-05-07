@@ -67,7 +67,7 @@ export default function Home() {
       </motion.section>
 
       {/* Testimonials */}
-      <motion.section
+      {/* <motion.section
         className="testimonials"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -80,7 +80,7 @@ export default function Home() {
           things I’ve ever done. I feel stronger at 60 than I did at 30.”
         </blockquote>
         <cite>— Placeholder</cite>
-      </motion.section>
+      </motion.section> */}
 
       {/* Footer CTA */}
       <motion.section
