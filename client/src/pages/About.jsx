@@ -14,7 +14,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <img src="/public/assets/marie.jpg" alt="Mom" className="about-image mom-image" />
+        <img src="/public/images/marie.jpg" alt="Mom" className="about-image mom-image" />
         <div className="about-text">
           <h2>Marie Street</h2>
           <p>
@@ -39,7 +39,7 @@ export default function About() {
             strong, confident, and supported in every step of their journey.
           </p>
         </div>
-        <img src="/public/assets/allan-deadlift.jpg" alt="Allan" className="about-image" />
+        <img src="/public/images/allan-deadlift.jpg" alt="Allan" className="about-image" />
       </motion.div>
     </div>
   );

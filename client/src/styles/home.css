@@ -34,7 +34,7 @@
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background-image: url('/public/assets/allan-n-mom.jpg');
+    background-image: url('/public/images/allan-n-mom.jpg');
     background-size: 80%;          /* 👈 Zoomed out image */
     background-position: center 20%; /* Adjust if head is too high */
     background-repeat: no-repeat;

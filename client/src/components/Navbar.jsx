@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-header">
         <Link to="/" className="logo">
-          <img src="/public/assets/NevesFit.png" alt="NevesFit Logo" className="logo-image" />
+          <img src="/images/NevesFit.png" alt="NevesFit Logo" className="logo-image" />
         </Link>
         <button className="hamburger" onClick={() => setOpen(!open)}>
           ☰

@@ -54,12 +54,12 @@ export default function Home() {
         viewport={{ once: false, amount: 0.5 }}
       >
         <div className="bio-card">
-          <img src="/public/assets/allan-home.jpg" alt="Allan" />
+          <img src="/images/allan-home.jpg" alt="Allan" />
           <h4>Allan Elias</h4>
           <p>Certified Personal Trainer. Transformation Coach.</p>
         </div>
         <div className="bio-card">
-          <img src="/public/assets/marie-home.jpg" alt="Mom" />
+          <img src="/images/marie-home.jpg" alt="Mom" />
           <h4>Marie Street</h4>
           <p>Strength & Wellness Mentor. Age-Friendly Fitness Expert.</p>
         </div>
