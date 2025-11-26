@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "../styles/home.css";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -19,8 +20,8 @@ export default function Home() {
             lifters to first-time movers.
           </p>
           <div className="hero-buttons">
-            <a href="/book"><button>Book a Session</button></a>
-            <a href="/stories"><button className="outline">View Success Stories</button></a>
+            <Link to="/book"><button>Book a Session</button></Link>
+            <Link to="/stories"><button className="outline">View Success Stories</button></Link>
           </div>
         </div>
         <div className="hero-image-bg"></div>
@@ -63,7 +64,7 @@ export default function Home() {
           <h4>Marie Street</h4>
           <p>Strength & Wellness Mentor. Age-Friendly Fitness Expert.</p>
         </div>
-        <a href="/about" className="bio-link">Read More →</a>
+        <Link to="/about" className="bio-link">Read More →</Link>
       </motion.section>
 
       {/* Testimonials */}
@@ -91,7 +92,7 @@ export default function Home() {
         viewport={{ once: false, amount: 0.5 }}
       >
         <h2>Ready to transform?</h2>
-        <a href="/book"><button>Book Your Session</button></a>
+        <Link to="/book"><button>Book Your Session</button></Link>
       </motion.section>
     </div>
   );
